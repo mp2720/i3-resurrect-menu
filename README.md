@@ -10,7 +10,7 @@ In `i3/config`:
 ```
 # i3-resurrect-menu
 for_window [class="i3-resurrect-menu"] floating enable
-bindsym $mod+p exec i3-resurrect-menu reserve
+bindsym $mod+p exec i3-resurrect-menu restore
 bindsym $mod+Shift+p exec i3-resurrect-menu save
 ```
 
