@@ -34,7 +34,7 @@ def ls_profiles(path: str) -> list[str]:
     filter_json = lambda s: s.endswith('_layout.json') or\
          s.endswith('_programs.json')
 
-    return list(set(map(remove_json_suf, filter(filter_json, files))))
+    return list(sorted(set(map(remove_json_suf, filter(filter_json, files)))))
 
 
 CHARS = r'123456789abcdefghijklmnopqrstuvwxyz!@#$%^&?*|_+<>.,\/'
